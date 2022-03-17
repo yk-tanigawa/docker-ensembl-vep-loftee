@@ -1,6 +1,7 @@
 # Original Dockerfile from Ensembl/ensembl-vep
 #   https://raw.githubusercontent.com/Ensembl/ensembl-vep/release/101/docker/Dockerfile
 #   We added loftee and its dependencies in the Docker
+#   2022.03.17 - We updated the VEP version to 105
 #
 ###################################################
 # Stage 1 - docker container to build ensembl-vep #
@@ -32,7 +33,7 @@ ENV OPT_SRC $OPT/src
 ENV HTSLIB_DIR $OPT_SRC/htslib
 ENV SAMTOOLS_DIR $OPT_SRC/samtools
 ENV LOFTEE_DIR $OPT_SRC/loftee-master
-ENV BRANCH release/101
+ENV BRANCH release/105
 ENV HTS_VERSION 1.9
 
 # samtools
